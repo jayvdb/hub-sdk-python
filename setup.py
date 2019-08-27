@@ -15,7 +15,7 @@ setup(
     author='Storyscript',
     author_email='support@storyscript.io',
     url='https://github.com/storyscript/hub-sdk-python',
-    packages=find_packages(exclude=('tests', 'docs')),
+    packages=find_packages(exclude=('build.*', 'tests', 'tests.*')),
     python_requires='>=3.5',
     install_requires=[
         'requests~=2.21',
