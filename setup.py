@@ -16,15 +16,16 @@ setup(
     author_email='support@storyscript.io',
     url='https://github.com/storyscript/hub-sdk-python',
     packages=find_packages(exclude=('tests', 'docs')),
+    python_requires='>=3.5',
     install_requires=[
         'requests~=2.21',
         'peewee==3.9.3',
         'cachetools==3.1.0'
     ],
     tests_require=[
-        'pytest==4.3.1',
-        'pytest-mock==1.10.2',
-        'pytest-cov==2.6.1'
+        'pytest',
+        'pytest-mock',
+        'pytest-cov'
     ],
     setup_requires=['pytest-runner==4.4']
 )
